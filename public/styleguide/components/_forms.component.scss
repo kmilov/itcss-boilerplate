@@ -1,0 +1,49 @@
+// Forms
+//
+// Form styles used throug the website under the Forms module,
+//
+// markup:
+// <div class="Form">
+//  <div class="Form-group">
+//    <label class="Form-label">Username</label>
+//    <input class="Form-control" placeholder="Type your username"/>
+//  </div>
+//  <div class="Form-group">
+//    <label class="Form-label">Password</label>
+//    <input type="password" class="Form-control" placeholder="Type your username"/>
+//  </div>
+// </div>
+//
+// Styleguide 5.2
+.Form {
+  &-group {
+    margin-bottom: 15px
+  }
+
+  &-label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: $helvetica;
+  }
+
+  &-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 3px 5px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  }
+}

@@ -1,0 +1,52 @@
+// Button
+//
+// Different buttons used throug the website under the Btn module,
+// this module can be used for anchor and button tags
+//
+// .Btn--primary  -  Creates a primary green button
+// .Btn--primary.Btn--inverse  -  Creates a primary inverse green button
+// .Btn--secondary  -  Creates a secondary purple button
+// .Btn--secondary.Btn--inverse  -  Creates a primary inverse purple button
+// .Btn--primary.Btn--block  -  Set the button to be a block element and fill the parent width, can be used in conjuction with every button style
+//
+// markup:
+// <a href="#" class="Btn {$modifiers}" role="button">button</a>
+//
+// Styleguide 5.1
+.Btn {
+  display: inline-block;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: $arial;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  padding: 6px 12px;
+}
+
+.Btn--primary {
+  background: $green-sushi;
+  color: white;
+}
+
+.Btn--primary.Btn--inverse {
+  border: 1px solid $green-sushi;
+  color: $green-sushi;
+  background: white;
+}
+
+.Btn--secondary {
+  background: $red-pink;
+  color: white;
+}
+.Btn--secondary.Btn--inverse {
+  border: 1px solid $red-pink;
+  color: $red-pink;
+  background: white;
+}
+
+.Btn--block {
+  display: block;
+  width: 100%;
+}
